@@ -15,7 +15,6 @@ public class StockDTO {
     private String name;
 
     @NotNull
-    @DecimalMin(value = "0.00")
     @Digits(integer = 6, fraction = 2)
     private Double price;
 
@@ -24,7 +23,6 @@ public class StockDTO {
     private LocalDate date;
 
     @NotNull
-    @DecimalMin(value = "0.00")
     @Digits(integer = 3, fraction = 2)
     private Double variation;
 
